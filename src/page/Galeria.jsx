@@ -16,7 +16,7 @@ const Galeria = () => {
         <h2>Fragancias...</h2>
             <ul>
                 {images.map((image) => 
-                <li>
+                <li key={image.id}>
                     <link href={`/detalle/${image.id}`} />
                     <img className='item-card'src={image.src} alt={image.src}/>  
 
